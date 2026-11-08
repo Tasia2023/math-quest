@@ -1,0 +1,2 @@
+-- SQL migration is maintained in the project setup materials; see README.md and Supabase setup guide.
+-- Apply only the reviewed schema supplied for this project. Never expose service_role keys.
