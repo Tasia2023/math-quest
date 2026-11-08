@@ -1,11 +1,385 @@
 <!DOCTYPE html>
-<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Math Quest — Карта знаний</title></head>
-<body><p>Загрузка Math Quest…</p><script>
-(async()=>{
-const b64="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";
-const bytes=Uint8Array.from(atob(b64),c=>c.charCodeAt(0));
-const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream("gzip"));
-const html=await new Response(stream).text();
-document.open();document.write(html);document.close();
-})().catch(e=>{document.body.textContent="Не удалось открыть диагностику: "+e.message;});
-</script></body></html>
+<html lang="ru" data-theme="graphite">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Интерактивная диагностика математических навыков: счёт в пределах 20, 1 класс.">
+<title>Карта знаний — Счёт в пределах 20</title>
+<style id="design-system">
+:root{color-scheme:dark;--bg:#19191e;--glow:#372630;--card-top:#303038;--card-bottom:#26262d;--line:#51515c;--text:#f8f8fa;--muted:#bfc0ca;--primary:#e3123f;--accent:#f3d98b;--border:#858590;--button:#3d3d47;--inset:#17171d;--notice:#f3d98b12;--good:#80d5aa;--bad:#ff91a6;--on-primary:#ffffff;--shadow:#00000022;}
+:root[data-theme="light"]{color-scheme:light;--bg:#f3f4f7;--glow:#f7e5eb;--card-top:#ffffff;--card-bottom:#f9f9fc;--line:#c9cbd5;--text:#20212b;--muted:#595c6c;--primary:#bc123b;--accent:#75540c;--border:#777b8b;--button:#e8e9f0;--inset:#ffffff;--notice:#75540c0d;--good:#17643f;--bad:#aa2042;--on-primary:#ffffff;--shadow:#18203512;}
+:root[data-theme="night"]{color-scheme:dark;--bg:#101827;--glow:#1d2c49;--card-top:#202e45;--card-bottom:#19253a;--line:#475c78;--text:#f4f7ff;--muted:#bac9de;--primary:#3369c9;--accent:#b9c5ff;--border:#8298b8;--button:#293d59;--inset:#101b2c;--notice:#b9c5ff12;--good:#83d9be;--bad:#ff9fb3;--on-primary:#ffffff;--shadow:#00000022;}
+:root[data-theme="sage"]{color-scheme:light;--bg:#f3f5ef;--glow:#e1eadd;--card-top:#ffffff;--card-bottom:#f8faf5;--line:#c5cec0;--text:#223126;--muted:#526552;--primary:#286344;--accent:#66531d;--border:#73836d;--button:#e5ebdf;--inset:#ffffff;--notice:#2863440d;--good:#24603b;--bad:#a4263c;--on-primary:#ffffff;--shadow:#20302012;}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 80% 0,var(--glow),var(--bg) 50%);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1050px;margin:auto;padding:25px 16px 70px}
+header,.foot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+header{margin-bottom:25px}
+.brand{font-weight:800;letter-spacing:.06em}
+.tag,.pill{border:1px solid var(--border);border-radius:30px;padding:5px 12px;font-size:13px}
+.card{background:linear-gradient(135deg,var(--card-top),var(--card-bottom));border:1px solid var(--line);border-radius:22px;padding:24px;margin:17px 0;box-shadow:0 12px 30px var(--shadow)}
+h1{font-size:clamp(28px,5vw,43px);line-height:1.15;margin:0 0 16px}
+h2{font-size:25px;margin:0 0 14px}
+h3{font-size:19px;margin:10px 0}
+p{margin:10px 0 15px}
+.muted,small{color:var(--muted)}
+button{background:var(--button);border:1px solid var(--border);color:var(--text);border-radius:12px;padding:12px 17px;font:inherit;font-weight:650;cursor:pointer}
+button.primary{color:var(--on-primary);background:var(--primary);border-color:var(--primary)}
+button.secondary{background:transparent}
+button:hover{border-color:var(--accent)}
+button:disabled{opacity:.4;cursor:not-allowed}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+a{color:var(--accent);cursor:pointer}
+.foot{margin-top:36px;border-top:1px solid var(--line);padding-top:20px}
+.notice{padding:12px 15px;background:var(--notice);border-left:3px solid var(--accent);border-radius:6px;margin:14px 0}
+.error{border-left-color:var(--bad);background:var(--notice)}
+.success{border-left-color:var(--good);background:var(--notice)}
+.options{display:grid;gap:9px;margin:18px 0}
+.option{display:flex;gap:12px;padding:12px;border:1px solid var(--border);border-radius:12px}
+.option b{color:var(--accent);min-width:20px}
+.columns{display:grid;grid-template-columns:1.5fr 1fr;gap:14px;margin:18px 0}
+.columns>div{background:var(--inset);border-radius:12px;padding:15px}
+.columns p{margin:7px 0}
+.answer{width:100%;max-width:440px;background:var(--inset);color:var(--text);border:1px solid var(--border);border-radius:12px;padding:14px;font:20px system-ui;letter-spacing:3px}
+textarea{width:100%;min-height:230px;background:var(--inset);color:var(--text);border:1px solid var(--border);border-radius:12px;padding:14px;font:13px/1.5 ui-monospace,monospace;resize:vertical}
+select{background:var(--inset);color:var(--text);border:1px solid var(--border);border-radius:9px;padding:10px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;border-bottom:1px solid var(--line);padding:11px 9px}
+th{color:var(--accent)}
+.scroll{overflow-x:auto}
+.wheel{background:linear-gradient(135deg,var(--card-top),var(--card-bottom));border-radius:22px;padding:18px;margin:18px 0}
+.wheelHead{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:13px;font-weight:750}
+.wheel svg{display:block;width:100%;max-width:820px;margin:auto}
+.sectionPick{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.sectionPick button{font-size:13px;padding:8px 11px}
+.sectionPick button.active{border-color:var(--accent);color:var(--accent)}
+.stats{display:flex;gap:10px;flex-wrap:wrap}
+#view{min-height:320px}
+@media(max-width:600px){main{padding:18px 12px 50px}.card{padding:17px}.columns{grid-template-columns:1fr}.wheel{padding:8px}.wheelHead{font-size:14px;padding:12px 8px}th,td{padding:8px 6px;font-size:12px}button{padding:11px 13px}}
+[hidden]{display:none!important} .brand{overflow-wrap:anywhere} .option{cursor:pointer;align-items:flex-start}.option:has(input:checked){border-color:var(--accent);background:var(--notice)}input{accent-color:var(--primary)}.theme{display:flex;align-items:center;gap:8px;font-size:13px}.bar{height:9px;border-radius:10px;background:var(--inset);overflow:hidden}.bar span{display:block;height:100%;background:var(--accent)}.skill-row{padding:13px 0;border-bottom:1px solid var(--line)}.skill-row p{margin:4px 0} .wheel svg{max-width:560px}.wheel svg .grid{stroke:var(--line);fill:none}.wheel svg .result{stroke:var(--accent);fill:var(--notice);stroke-width:3}.wheel svg text{fill:var(--text);font:15px system-ui}h1,h2,h3,p,label{overflow-wrap:anywhere}button,select{min-height:44px}fieldset{border:0;padding:0;margin:0;min-width:0}legend{font-size:22px;font-weight:700;width:100%} .review{border-top:1px solid var(--line);padding:12px 0}
+input[type="text"],input[type="number"]{background:var(--inset);color:var(--text);border:1px solid var(--border);border-radius:12px;padding:14px;font:inherit;width:100%;max-width:440px} .option input{flex:0 0 auto;margin-top:5px} .option span{min-width:0} .skill-row h3{margin:0 0 6px} .result-summary{font-size:25px;font-weight:750} .wheel svg{overflow:visible} .question-title{font-size:22px;line-height:1.4;font-weight:700} .error-text{color:var(--bad)}
+/* Единый компонент задания: инструкция → материал → ответ */
+.card .question-title{font-size:22px;line-height:1.4;font-weight:700;margin:20px 0 18px;letter-spacing:normal}
+.task-materials{display:grid;gap:16px;margin:0 0 24px;min-width:0}
+.task-material{background:var(--inset);border:1px solid var(--line);border-radius:14px;padding:20px;min-width:0}
+.task-material .material-title{font-size:14px;line-height:1.4;font-weight:650;color:var(--muted);margin:0 0 12px}
+.material-content{font-size:17px;line-height:1.7;font-weight:400;letter-spacing:normal;overflow-wrap:anywhere}
+.material-content p{margin:0 0 14px;white-space:pre-wrap}
+.material-content>:last-child{margin-bottom:0}
+.material-content ol,.material-content ul{margin:0;padding-left:1.6em}
+.material-content li+li{margin-top:12px}
+.material-content figure{margin:0}
+.material-content img,.material-content svg{display:block;max-width:100%;height:auto}
+.material-content figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+.material-formula{font-size:22px;line-height:1.6;padding:8px 0}
+.material-scroll{max-width:100%;overflow-x:auto}
+.material-code{font:15px/1.6 ui-monospace,monospace;white-space:pre-wrap;margin:0}
+.answer-group{min-width:0;margin:0}
+.answer-group .answer-label{font-size:16px;line-height:1.5;font-weight:600;margin:0 0 12px;padding:0}
+.answer-group .options{margin:0}
+.answer-group .option{font-size:16px;line-height:1.6;font-weight:400}
+.answer-group .answer{font:inherit;letter-spacing:normal}
+.answer-hint{font-size:14px;line-height:1.5;color:var(--muted);margin:8px 0 0}
+@media(max-width:600px){.card .question-title{font-size:20px}.task-material{padding:16px}.material-content{font-size:16px;line-height:1.65}}
+/* Дополнительные состояния интерфейса */
+.option input{width:18px;height:18px}
+.answer-label{display:block}
+.material-table{min-width:260px}
+.skill-row .bar{margin-top:8px}
+.skill-status{font-weight:650}
+.review-answer{display:grid;gap:5px;margin:12px 0}
+.review-answer strong{color:var(--accent)}
+.small-note{font-size:13px;color:var(--muted)}
+.topline{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+
+/* COMIC MARKER / BLOCK-WORLD VISUAL UPDATE */
+:root{color-scheme:light;--bg:#fff9ef;--glow:#ffe4ed;--card-top:#fffefa;--card-bottom:#fffefa;--line:#171717;--text:#171717;--muted:#4e4a4a;--primary:#ed2861;--accent:#ffd52e;--border:#171717;--button:#20b9e8;--inset:#fff2c7;--notice:#ffe36a55;--good:#168b55;--bad:#d92b4d;--on-primary:#fff;--shadow:#171717;}
+:root[data-theme="light"]{--bg:#fff9ef;--glow:#ffdce8;--card-top:#fffefa;--card-bottom:#fffefa;--line:#171717;--text:#171717;--muted:#4e4a4a;--primary:#ed2861;--accent:#ffd52e;--border:#171717;--button:#20b9e8;--inset:#fff2c7;--notice:#ffe36a55;--good:#168b55;--bad:#d92b4d;--shadow:#171717}
+:root[data-theme="graphite"]{--bg:#f9f5ff;--glow:#e8dcff;--card-top:#fff;--card-bottom:#fff;--line:#171717;--text:#171717;--muted:#50475b;--primary:#7b42db;--accent:#ffcf32;--border:#171717;--button:#28bce8;--inset:#f1eaff;--notice:#ffcf324d;--good:#168b55;--bad:#d92b4d;--shadow:#171717}
+:root[data-theme="night"]{color-scheme:dark;--bg:#15223b;--glow:#283e70;--card-top:#263957;--card-bottom:#1d2d49;--line:#f8f5ed;--text:#fffdf7;--muted:#d6e2f4;--primary:#ff3f78;--accent:#ffdb43;--border:#fffdf7;--button:#19bce8;--inset:#172640;--notice:#ffdb4330;--good:#7ee0a9;--bad:#ff9caf;--shadow:#050b18}
+:root[data-theme="sage"]{--bg:#f1f8e9;--glow:#d5f1d7;--card-top:#fffef7;--card-bottom:#fffef7;--line:#17291d;--text:#17291d;--muted:#425b49;--primary:#e83d6c;--accent:#ffc928;--border:#17291d;--button:#20b9e8;--inset:#e4f3df;--notice:#ffc92855;--good:#168b55;--bad:#bd2445;--shadow:#17291d}
+body{background-color:var(--bg);background-image:radial-gradient(var(--line) 0.65px,transparent .65px),radial-gradient(circle at 90% 0,var(--glow),transparent 35%);background-size:15px 15px,auto;background-attachment:fixed;font-family:"Trebuchet MS","Arial Rounded MT Bold",system-ui,sans-serif;letter-spacing:.01em}
+main{max-width:1100px;padding-top:18px}
+header{padding:12px 15px;background:var(--card-top);border:3px solid var(--line);border-radius:17px;box-shadow:5px 5px 0 var(--shadow);transform:rotate(-.25deg)}
+.brand{font-weight:1000;letter-spacing:.08em;text-transform:uppercase}
+.theme{font-weight:900;text-transform:uppercase}
+.card{position:relative;background:var(--card-top);border:3px solid var(--line);border-radius:18px;box-shadow:7px 7px 0 var(--shadow);padding:clamp(18px,3vw,30px);margin:22px 0;overflow:hidden}
+.card:before{content:"";position:absolute;inset:0 auto auto 0;width:100%;height:9px;background:repeating-linear-gradient(135deg,var(--primary) 0 12px,var(--accent) 12px 24px,var(--button) 24px 36px)}
+h1,h2,h3{font-weight:1000;letter-spacing:-.035em;text-transform:uppercase}
+h1{font-size:clamp(42px,7vw,76px);line-height:.95;text-shadow:3px 3px 0 var(--accent),6px 6px 0 var(--line);margin:12px 0 20px}
+h2{font-size:clamp(25px,4vw,36px);text-shadow:2px 2px 0 var(--accent)}
+h3{font-size:19px}
+button{border:3px solid var(--line);border-radius:11px;box-shadow:3px 3px 0 var(--shadow);font-weight:1000;text-transform:uppercase;transition:transform .12s ease,box-shadow .12s ease}
+button:hover{transform:translate(-2px,-2px);box-shadow:5px 5px 0 var(--shadow)}
+button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--shadow)}
+button.primary{background:var(--primary);color:white;text-shadow:1px 1px 0 #171717}
+button.secondary{background:var(--accent);color:#171717}
+.pill,.tag{border:2px solid var(--line);border-radius:8px;background:var(--accent);color:#171717;font-weight:1000;text-transform:uppercase;box-shadow:2px 2px 0 var(--shadow)}
+.task-material{background:var(--inset);border:2px dashed var(--line);border-radius:13px;box-shadow:3px 3px 0 var(--shadow)}
+.material-title{font-weight:1000!important;text-transform:uppercase;letter-spacing:.06em}
+.material-formula{font-size:clamp(25px,5vw,34px);font-weight:1000}
+.option{border:2px solid var(--line);background:var(--card-top);border-radius:10px;box-shadow:2px 2px 0 var(--shadow);transition:transform .12s ease}
+.option:hover{transform:translateX(3px);border-color:var(--primary)}
+.option:has(input:checked){border:3px solid var(--primary);background:var(--notice);box-shadow:3px 3px 0 var(--primary)}
+.option b{color:var(--primary)}
+.answer{border:3px solid var(--line)!important;box-shadow:3px 3px 0 var(--shadow)}
+.bar{height:13px;border:2px solid var(--line);background:var(--inset);border-radius:20px}
+.bar span{background:repeating-linear-gradient(135deg,var(--primary) 0 10px,var(--accent) 10px 20px,var(--button) 20px 30px)}
+.wheel{border:3px solid var(--line);border-radius:15px;background:var(--inset);box-shadow:5px 5px 0 var(--shadow)}
+.wheelHead{font-weight:1000;text-transform:uppercase}
+.wheel svg .grid{stroke:var(--line);stroke-width:1.5}
+.wheel svg .result{stroke:var(--primary);fill:#ed286133;stroke-width:5;stroke-linejoin:round}
+.wheel svg text{font-weight:1000;paint-order:stroke;stroke:var(--inset);stroke-width:4px;stroke-linejoin:round}
+.skill-row{border-bottom:2px dashed var(--line)}
+.skill-row .bar span{background:var(--good)}
+.notice{border:2px solid var(--line);border-left:8px solid var(--accent);border-radius:10px;box-shadow:3px 3px 0 var(--shadow)}
+.review{border-top:2px dashed var(--line)}
+.foot{border-top:2px dashed var(--line);font-weight:800}
+.comic-kicker{display:inline-block;padding:5px 10px;background:var(--accent);border:2px solid var(--line);box-shadow:3px 3px 0 var(--shadow);font-weight:1000;letter-spacing:.1em;transform:rotate(-2deg);font-size:12px}
+.cover-card{background:linear-gradient(130deg,var(--card-top) 0 58%,var(--glow) 58% 100%)}
+.cover-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center}
+.cover-copy{position:relative;z-index:1}
+.cover-subtitle{font-size:clamp(19px,3vw,27px);font-weight:1000;color:var(--primary);line-height:1.15}
+.sticker-label{display:inline-block;background:var(--button);border:2px solid var(--line);padding:5px 10px;font-weight:1000;transform:rotate(2deg);box-shadow:3px 3px 0 var(--shadow)}
+.hero-stage{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:5px;min-height:230px;padding:18px 5px 25px;background:radial-gradient(circle,var(--accent) 1px,transparent 2px);background-size:12px 12px;border:3px solid var(--line);border-radius:48% 42% 15px 15px;transform:rotate(1deg)}
+.hero-sticker{display:inline-flex;align-items:center;gap:6px;vertical-align:middle;padding:5px 8px;background:var(--card-top);border:2px solid var(--line);border-radius:10px;box-shadow:3px 3px 0 var(--shadow);font-size:10px;font-weight:1000;letter-spacing:.04em;transform:rotate(-2deg)}
+.hero-stage .hero-sticker{display:flex;flex-direction:column;max-width:31%;padding:5px}
+.pixel-hero{width:64px;height:80px;image-rendering:pixelated;filter:drop-shadow(2px 2px 0 var(--line))}
+.hero-stage .pixel-hero{width:100%;height:130px}
+.hero-stage .hero-sticker:nth-child(2){transform:translateY(-18px) rotate(3deg)}
+.hero-stage .hero-sticker:nth-child(3){transform:rotate(-4deg)}
+.comic-burst{position:absolute;right:-7px;top:-15px;padding:13px 9px;background:var(--primary);color:white;border:3px solid var(--line);clip-path:polygon(50% 0,62% 27%,95% 12%,78% 43%,100% 60%,69% 68%,78% 100%,48% 78%,20% 100%,28% 68%,0 56%,27% 40%,8% 12%,40% 28%);font-weight:1000;text-align:center;transform:rotate(10deg);text-shadow:1px 2px #171717}
+.doodle-strip{display:flex;justify-content:space-around;gap:8px;margin-top:22px;padding:9px;border-top:2px dashed var(--line);border-bottom:2px dashed var(--line);font-weight:1000;letter-spacing:.12em;color:var(--primary);transform:rotate(-.5deg)}
+.question-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.question-top .hero-sticker{margin-bottom:6px}
+.result-heading{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.result-heading .hero-sticker{transform:rotate(4deg)}
+.result-summary{display:inline-block;padding:7px 13px;background:var(--accent);border:2px solid var(--line);border-radius:9px;box-shadow:3px 3px 0 var(--shadow)}
+.object-groups{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center}
+.object-group{padding:12px;background:var(--card-top);border:2px solid var(--line);border-radius:12px;box-shadow:3px 3px 0 var(--shadow)}
+.object-label{font-size:14px;font-weight:1000;text-transform:uppercase}
+.object-label b{display:inline-block;margin-left:5px;background:var(--accent);padding:2px 6px;border:1px solid var(--line);border-radius:5px}
+.objects{display:flex;flex-wrap:wrap;gap:4px;margin-top:8px;font-size:clamp(23px,4vw,32px)}
+.plus-sticker{font-size:30px;font-weight:1000;color:var(--primary);text-shadow:2px 2px var(--accent)}
+.visual-hint{grid-column:1/-1;text-align:center;font-weight:1000;color:var(--primary);text-transform:uppercase}
+@media(max-width:650px){.cover-layout{grid-template-columns:1fr}.hero-stage{min-height:175px}.hero-stage .pixel-hero{height:100px}.object-groups{grid-template-columns:1fr}.plus-sticker{text-align:center;line-height:.7}.result-heading{align-items:flex-start}.question-top .hero-sticker span{display:none}.doodle-strip{font-size:11px}}
+
+
+/* SIX BLOCK-WORLD SKILL LOCATIONS */
+.world-intro{margin:18px 0 20px;padding:15px 17px;border:2px dashed var(--line);border-radius:12px;background:var(--notice);box-shadow:3px 3px 0 var(--shadow)}
+.world-intro-sticker{display:inline-block;padding:5px 9px;background:var(--accent);border:2px solid var(--line);font-size:12px;font-weight:1000;letter-spacing:.08em;transform:rotate(-1deg)}
+.world-intro p{margin:10px 0 0;font-weight:700}
+.world-map{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:18px 0}
+.world-card{position:relative;min-width:0;overflow:hidden;padding:14px;border:3px solid var(--line);border-radius:14px;background:var(--card-top);box-shadow:5px 5px 0 var(--shadow)}
+.world-card-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.world-icon{display:grid;place-items:center;width:42px;height:42px;border:2px solid var(--line);border-radius:9px;background:var(--accent);font-size:24px;box-shadow:2px 2px 0 var(--shadow)}
+.world-number{font-size:11px;font-weight:1000;letter-spacing:.09em}
+.world-scene{position:relative;height:94px;margin:11px -2px 12px;overflow:hidden;border:2px solid var(--line);background:linear-gradient(#7bd9f4 0 68%,#b4e66b 68% 100%);image-rendering:pixelated}
+.world-scene:before,.world-scene:after{content:"";position:absolute;background:#fff;border:2px solid #171717}
+.world-scene:before{width:46px;height:14px;top:15px;left:16%;box-shadow:10px -8px 0 -2px #fff,10px -8px 0 0 #171717}
+.world-scene:after{width:35px;height:12px;top:28px;right:18%;box-shadow:8px -7px 0 -2px #fff,8px -7px 0 0 #171717}
+.block-ground{position:absolute;bottom:0;left:0;width:100%;height:25px;background:repeating-linear-gradient(90deg,#5d9d3c 0 18px,#47812f 18px 36px);border-top:3px solid #171717}
+.block-hill{position:absolute;bottom:22px;width:62px;height:35px;background:#4f9c3d;border:3px solid #171717;clip-path:polygon(0 100%,0 55%,28% 55%,28% 20%,67% 20%,67% 0,100% 0,100% 100%)}
+.hill-a{left:10%}.hill-b{right:9%;transform:scale(.72);transform-origin:bottom right}
+.block-cloud{position:absolute;top:10px;left:47%;width:25px;height:12px;background:#fff;border:2px solid #171717;box-shadow:12px -5px 0 -1px #fff,12px -5px 0 1px #171717}
+.world-mob{position:absolute;z-index:2;bottom:20px;left:48%;font-size:34px;filter:drop-shadow(2px 2px 0 #171717)}
+.biome-mountain .world-scene{background:linear-gradient(#80d5f5 0 100%)}
+.biome-mountain .block-hill{background:#9aa7b2}
+.biome-cave .world-scene{background:linear-gradient(#38445e,#161b2d)}
+.biome-cave .block-ground,.biome-cave .block-hill{background:#596273}
+.biome-village .world-scene{background:linear-gradient(#8bdcf3 0 68%,#9dce63 68%)}
+.biome-village .world-mob{font-size:40px}
+.biome-forest .world-scene{background:linear-gradient(#92d9ee 0 65%,#4b9c45 65%)}
+.biome-forest .block-hill{background:#287044}
+.biome-snow .world-scene{background:linear-gradient(#bdeaff 0 68%,#fff 68%)}
+.biome-snow .block-ground{background:repeating-linear-gradient(90deg,#f9ffff 0 18px,#c8e6f4 18px 36px)}
+.world-biome{font-size:11px;font-weight:1000;letter-spacing:.1em;text-transform:uppercase;color:var(--primary)}
+.world-card h3{margin:4px 0 3px;font-size:20px;line-height:1.15}
+.world-skill{margin:0 0 5px;font-weight:900}
+.world-hint{min-height:42px;margin:0 0 12px;color:var(--muted);font-size:13px;line-height:1.4}
+.world-progress-head{display:flex;justify-content:space-between;gap:8px;margin-bottom:6px;font-size:12px;font-weight:1000}
+.world-progress-head strong:last-child{font-size:19px;color:var(--primary)}
+.world-xp{height:15px;overflow:hidden;border:2px solid var(--line);border-radius:4px;background:var(--inset);box-shadow:inset 0 1px 2px #0002}
+.world-xp span{display:block;height:100%;background:repeating-linear-gradient(135deg,#22c5e8 0 9px,#45d5ed 9px 18px);border-right:2px solid var(--line)}
+.world-card-bottom{display:flex;justify-content:space-between;gap:7px;align-items:center;margin-top:8px;font-size:11px;font-weight:900;flex-wrap:wrap}
+.world-stage{padding:3px 6px;border:1px solid var(--line);border-radius:5px;background:var(--notice)}
+@media(max-width:620px){.world-map{grid-template-columns:1fr}.world-hint{min-height:0}.world-scene{height:100px}}
+
+
+/* THREE INDIVIDUAL TASKS PER MINECRAFT LOCATION */
+.results-section-title{margin:24px 0 12px;padding:7px 10px;display:inline-block;background:var(--accent);border:2px solid var(--line);box-shadow:3px 3px 0 var(--shadow);font-size:15px;letter-spacing:.06em}
+.world-task-list{margin-top:12px;padding:9px 10px;background:var(--inset);border:2px dashed var(--line);border-radius:9px}
+.world-task-title{margin-bottom:6px;font-size:10px;font-weight:1000;letter-spacing:.09em}
+.world-task-row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:5px 0;border-top:1px solid color-mix(in srgb,var(--line) 25%,transparent);font-size:12px;font-weight:800}
+.world-task-row strong{font-size:11px;white-space:nowrap}
+.task-done{color:var(--good)}
+.task-retry{color:var(--bad)}
+.wheel{margin:12px 0 20px}
+
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">MATH QUEST / КАРТА ЗНАНИЙ</div>
+  <label class="theme">Оформление
+    <select id="theme" aria-label="Оформление">
+      <option value="graphite">Графит</option><option value="light">Светлая</option><option value="night">Ночная синяя</option><option value="sage">Шалфейная</option>
+    </select>
+  </label>
+</header>
+<div id="view" aria-live="polite"></div>
+<footer class="foot"><span class="muted">MATH QUEST · OFFLINE MODE</span><span class="tag">6 СУПЕРНАВЫКОВ</span></footer>
+</main>
+<script>
+'use strict';
+const skills = [
+ {id:'S1',name:'Сложение и вычитание',repeat:'Сложение и вычитание в пределах 20, в том числе действия с переходом через десяток.',step:'Решите несколько примеров, проговаривая каждый шаг и используя числовой ряд при необходимости.'},
+ {id:'S2',name:'Сравнение чисел и выражений',repeat:'Знаки «больше», «меньше», «равно»; сравнение результатов выражений.',step:'Сначала вычислите выражения, затем сравните полученные числа.'},
+ {id:'S3',name:'Неизвестное число',repeat:'Нахождение неизвестного слагаемого и вычитаемого, разложение числа на равные части.',step:'Подберите число и проверьте его подстановкой в исходную запись.'},
+ {id:'S4',name:'Текстовые задачи',repeat:'Задачи на нахождение суммы, остатка и увеличение числа на несколько единиц.',step:'Подчеркните известные данные, определите вопрос задачи и выберите действие.'},
+ {id:'S5',name:'Работа с данными',repeat:'Чтение таблицы, сравнение нескольких количеств и нахождение разности по данным таблицы.',step:'Найдите нужные строки таблицы, выпишите числа и выполните требуемое действие.'},
+ {id:'S6',name:'Счёт и последовательность чисел',repeat:'Порядок чисел в пределах 20, предыдущее и следующее число, счёт назад.',step:'Проговорите числовой ряд вперёд и назад, затем назовите соседей выбранных чисел.'}
+];
+const sharedTable = {type:'table',title:'Таблица к заданию',rows:[['Животные','Количество'],['Воробьи','8'],['Белки','5'],['Бабочки','12']]};
+const questions = [
+ {id:'q01',skillId:'S1',instruction:'Посчитай яблоки двух цветов. Сколько яблок получилось всего?',materials:[{type:'visual',title:'Собери все яблоки',groups:[{label:'Красные яблоки',count:3,emoji:'🍎'},{label:'Зелёные яблоки',count:5,emoji:'🍏'}]},{type:'formula',title:'Запись примера',content:'3 + 5 = ?'}],kind:'number',hint:'Введи общее количество яблок.',accepted:['8'],answer:'8',explain:'Складываем две группы: 3 красных + 5 зелёных = 8 яблок.',recommend:'Повтори сложение двух групп предметов: сначала посчитай предметы в каждой группе, затем найди общее количество.'},
+ {id:'q02',skillId:'S1',instruction:'Вычисли.',materials:[{type:'formula',title:'Выражение',content:'15 − 8 = ?'}],kind:'number',hint:'Введи одно число.',accepted:['7'],answer:'7',explain:'15 − 8 = 7.',recommend:'Повтори вычитание с помощью числового ряда.'},
+ {id:'q03',skillId:'S1',instruction:'Выполни действия по порядку.',materials:[{type:'formula',title:'Выражение',content:'9 + 4 − 3 = ?'}],kind:'number',hint:'Введи результат.',accepted:['10'],answer:'10',explain:'Сначала 9 + 4 = 13, затем 13 − 3 = 10.',recommend:'Повтори последовательное выполнение действий слева направо.'},
+ {id:'q04',skillId:'S2',instruction:'Выбери правильный знак сравнения.',materials:[{type:'formula',title:'Запись для сравнения',content:'14  □  17'}],kind:'radio',options:[['lt','меньше ( < )'],['gt','больше ( > )'],['eq','равно ( = )']],correct:'lt',answer:'меньше ( < )',explain:'14 меньше 17, поэтому нужен знак «меньше».',recommend:'Повтори сравнение чисел по числовому ряду.'},
+ {id:'q05',skillId:'S2',instruction:'Сначала вычисли выражение, затем выбери правильный знак.',materials:[{type:'formula',title:'Запись для сравнения',content:'8 + 5  □  15'}],kind:'radio',options:[['lt','меньше ( < )'],['gt','больше ( > )'],['eq','равно ( = )']],correct:'lt',answer:'меньше ( < )',explain:'8 + 5 = 13, а 13 меньше 15.',recommend:'Сначала вычисляй выражение, затем сравнивай результат с числом.'},
+ {id:'q06',skillId:'S2',instruction:'Сначала выполни вычитание, затем выбери правильный знак.',materials:[{type:'formula',title:'Запись для сравнения',content:'18 − 6  □  10'}],kind:'radio',options:[['lt','меньше ( < )'],['gt','больше ( > )'],['eq','равно ( = )']],correct:'gt',answer:'больше ( > )',explain:'18 − 6 = 12, а 12 больше 10.',recommend:'Повтори сравнение результатов вычислений.'},
+ {id:'q07',skillId:'S3',instruction:'Найди число, которое обозначено треугольником.',materials:[{type:'formula',title:'Выражение',content:'▲ + 5 = 12'}],kind:'number',hint:'Введи число вместо треугольника.',accepted:['7'],answer:'7',explain:'7 + 5 = 12, значит вместо треугольника нужно поставить 7.',recommend:'Повтори нахождение неизвестного слагаемого.'},
+ {id:'q08',skillId:'S3',instruction:'Найди число, которое обозначено ромбом.',materials:[{type:'formula',title:'Выражение',content:'16 − ◆ = 9'}],kind:'number',hint:'Введи число вместо ромба.',accepted:['7'],answer:'7',explain:'16 − 7 = 9, значит неизвестное число — 7.',recommend:'Повтори нахождение неизвестного вычитаемого.'},
+ {id:'q09',skillId:'S3',instruction:'Одинаковые кружки обозначают одинаковые числа. Найди это число.',materials:[{type:'formula',title:'Выражение',content:'● + ● = 10'}],kind:'number',hint:'Введи одно число.',accepted:['5'],answer:'5',explain:'10 можно разделить на две равные части: 5 и 5.',recommend:'Повтори разложение числа на две равные части.'},
+ {id:'q10',skillId:'S4',instruction:'Прочитай задачу и выбери правильный ответ.',materials:[{type:'text',title:'Условие задачи',content:'У Маши было 8 красных карандашей и 6 синих. Сколько всего карандашей было у Маши?'},{type:'visual',title:'Представь карандаши',groups:[{label:'Красные карандаши',count:8,emoji:'🖍️'},{label:'Синие карандаши',count:6,emoji:'✏️'}]}],kind:'radio',options:[['12','12 карандашей'],['14','14 карандашей'],['15','15 карандашей']],correct:'14',answer:'14 карандашей',explain:'Нужно узнать, сколько карандашей всего: 8 + 6 = 14.',recommend:'Повтори задачи на нахождение суммы: когда спрашивают «сколько всего», количества складывают.'},
+ {id:'q11',skillId:'S4',instruction:'Прочитай задачу и выбери правильный ответ.',materials:[{type:'text',title:'Условие задачи',content:'На ветке сидели 17 птиц. 5 птиц улетели. Сколько птиц осталось на ветке?'}],kind:'radio',options:[['11','11 птиц'],['12','12 птиц'],['13','13 птиц']],correct:'12',answer:'12 птиц',explain:'Птиц стало меньше, поэтому вычитаем: 17 − 5 = 12.',recommend:'Повтори задачи на нахождение остатка.'},
+ {id:'q12',skillId:'S4',instruction:'Прочитай задачу и выбери правильный ответ.',materials:[{type:'text',title:'Условие задачи',content:'В одной корзине 9 яблок, а в другой на 4 яблока больше. Сколько яблок во второй корзине?'},{type:'visual',title:'Модель задачи',groups:[{label:'Яблок в первой корзине',count:9,emoji:'🍎'},{label:'Ещё яблок во второй корзине',count:4,emoji:'🍏'}]}],kind:'radio',options:[['5','5 яблок'],['12','12 яблок'],['13','13 яблок']],correct:'13',answer:'13 яблок',explain:'Во второй корзине на 4 яблока больше: 9 + 4 = 13.',recommend:'Повтори задачи на увеличение числа на несколько единиц.'},
+ {id:'q13',skillId:'S5',instruction:'Посмотри на таблицу. Сколько воробьёв насчитали в школьном саду?',materials:[sharedTable],kind:'radio',options:[['5','5 воробьёв'],['8','8 воробьёв'],['12','12 воробьёв']],correct:'8',answer:'8 воробьёв',explain:'В строке «Воробьи» указано количество 8.',recommend:'Повтори поиск нужных данных в строках и столбцах таблицы.'},
+ {id:'q14',skillId:'S5',instruction:'Посмотри на таблицу. Каких животных насчитали больше всего?',materials:[sharedTable],kind:'radio',options:[['sparrows','Воробьёв'],['squirrels','Белок'],['butterflies','Бабочек']],correct:'butterflies',answer:'Бабочек',explain:'Сравниваем числа 8, 5 и 12. Самое большое число — 12, это количество бабочек.',recommend:'Повтори сравнение нескольких количеств по таблице.'},
+ {id:'q15',skillId:'S5',instruction:'Посмотри на таблицу. На сколько бабочек больше, чем белок?',materials:[sharedTable],kind:'number',hint:'Введи разницу — одно число.',accepted:['7'],answer:'7',explain:'Чтобы узнать, на сколько одно количество больше другого, находим разность: 12 − 5 = 7.',recommend:'Повтори нахождение разности двух количеств по таблице.'},
+ {id:'q16',skillId:'S6',instruction:'Выбери число, которое пропущено в числовом ряду.',materials:[{type:'formula',title:'Числовой ряд',content:'11, 12, □, 14, 15'}],kind:'radio',options:[['13','13'],['16','16'],['10','10']],correct:'13',answer:'13',explain:'Числа идут по порядку, каждое следующее на единицу больше: 11, 12, 13, 14, 15.',recommend:'Повтори последовательность чисел от 1 до 20.'},
+ {id:'q17',skillId:'S6',instruction:'Выбери пару чисел: предыдущее и следующее для числа 14.',materials:[{type:'formula',title:'Числовой ряд',content:'□   14   □'}],kind:'radio',options:[['12-15','12 и 15'],['13-15','13 и 15'],['15-16','15 и 16']],correct:'13-15',answer:'13 и 15',explain:'Перед 14 стоит 13, после 14 — 15.',recommend:'Повтори, как находить предыдущее и следующее число.'},
+ {id:'q18',skillId:'S6',instruction:'Продолжи счёт назад. Какое число будет следующим?',materials:[{type:'formula',title:'Числовой ряд',content:'18, 17, 16, 15, ...'}],kind:'radio',options:[['14','14'],['13','13'],['16','16']],correct:'14',answer:'14',explain:'При счёте назад каждое следующее число на единицу меньше: после 15 идёт 14.',recommend:'Повтори обратный счёт от 20 до 1.'}
+];
+const answers = {};
+let current = 0;
+let screen = 'start';
+let results = null;
+const view = document.getElementById('view');
+const themeSelect = document.getElementById('theme');
+const esc = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function setTheme(value){document.documentElement.dataset.theme=value;themeSelect.value=value;}
+themeSelect.addEventListener('change',e=>setTheme(e.target.value));
+function focusHeading(selector){const el=view.querySelector(selector);if(el){el.focus({preventScroll:true});el.scrollIntoView({behavior:'instant',block:'start'});}}
+
+function heroSVG(kind='steve',label=''){
+ const palettes={
+  steve:{skin:'#c98d62',hair:'#49342b',shirt:'#2387c9',pants:'#344f9b',detail:'#1d273c'},
+  alex:{skin:'#e7b18a',hair:'#d87524',shirt:'#4a9b55',pants:'#6b4934',detail:'#263b2a'},
+  creeper:{skin:'#63bd52',hair:'#347d37',shirt:'#63bd52',pants:'#397f38',detail:'#173b22'}
+ };
+ const c=palettes[kind]||palettes.steve;
+ if(kind==='creeper') return `<svg class="pixel-hero creeper" viewBox="0 0 120 140" role="img" aria-label="Крипер из кубического мира"><rect x="25" y="5" width="70" height="70" rx="2" fill="${c.skin}" stroke="#171717" stroke-width="5"/><rect x="38" y="25" width="14" height="14" fill="#17251b"/><rect x="68" y="25" width="14" height="14" fill="#17251b"/><path d="M52 42h16v12h10v14H42V54h10z" fill="#17251b"/><rect x="33" y="75" width="54" height="52" fill="${c.skin}" stroke="#171717" stroke-width="5"/><rect x="34" y="112" width="20" height="18" fill="#2f7138" stroke="#171717" stroke-width="4"/><rect x="66" y="112" width="20" height="18" fill="#2f7138" stroke="#171717" stroke-width="4"/></svg>`;
+ return `<svg class="pixel-hero" viewBox="0 0 120 150" role="img" aria-label="${kind==='alex'?'Алекс':'Стив'} из кубического мира"><rect x="25" y="4" width="70" height="57" fill="${c.skin}" stroke="#171717" stroke-width="5"/><path d="M22 28V7h75v18H80V15H37v13z" fill="${c.hair}" stroke="#171717" stroke-width="5"/><rect x="38" y="31" width="12" height="8" fill="#171717"/><rect x="70" y="31" width="12" height="8" fill="#171717"/><rect x="50" y="49" width="20" height="5" fill="#8d3c36"/><rect x="33" y="61" width="54" height="48" fill="${c.shirt}" stroke="#171717" stroke-width="5"/><rect x="22" y="65" width="13" height="42" fill="${c.skin}" stroke="#171717" stroke-width="4"/><rect x="85" y="65" width="13" height="42" fill="${c.skin}" stroke="#171717" stroke-width="4"/><rect x="35" y="108" width="23" height="35" fill="${c.pants}" stroke="#171717" stroke-width="5"/><rect x="62" y="108" width="23" height="35" fill="${c.pants}" stroke="#171717" stroke-width="5"/><rect x="31" y="139" width="29" height="8" fill="${c.detail}"/><rect x="60" y="139" width="29" height="8" fill="${c.detail}"/></svg>`;
+}
+function heroSticker(kind,caption){
+ return `<div class="hero-sticker">${heroSVG(kind)}<span>${caption}</span></div>`;
+}
+
+function renderStart(){screen='start';view.innerHTML=`
+<section class="card cover-card">
+  <div class="comic-kicker">MATH QUEST · МИР ЧИСЕЛ</div>
+  <div class="cover-layout">
+    <div class="cover-copy">
+      <div class="sticker-label">МИССИЯ № 01</div>
+      <h1 tabindex="-1" id="screen-title">Счёт<br>до 20!</h1>
+      <p class="cover-subtitle">Проверь свои математические суперсилы!</p>
+      <p>Решай примеры, собирай яблоки, сравнивай числа и помогай героям кубического мира.</p>
+      <span class="pill">18 заданий · 6 навыков</span>
+      <div class="actions"><button class="primary" id="startBtn" type="button">ПОЕХАЛИ! <span aria-hidden="true">➜</span></button></div>
+    </div>
+    <div class="hero-stage">${heroSticker('steve','СТИВ')}${heroSticker('alex','АЛЕКС')}${heroSticker('creeper','КРИПЕР')}<div class="comic-burst">LEVEL<br>UP!</div></div>
+  </div>
+  <div class="doodle-strip"><span>СЧИТАЙ</span><span>ДУМАЙ</span><span>ПОБЕЖДАЙ</span></div>
+</section>
+<section class="card">
+  <h2>Как это работает</h2>
+  <p>За каждый правильный ответ начисляется 1 балл. После последнего задания появится карта знаний с результатами по шести навыкам, рекомендации и разбор ошибок.</p>
+  <p class="muted">Ответы сохраняются при переходах между заданиями, но не после перезагрузки страницы. Это диагностический материал по представленным заданиям, а не стандартизированный тест.</p>
+</section>`;
+ document.getElementById('startBtn').addEventListener('click',()=>{current=0;Object.keys(answers).forEach(k=>delete answers[k]);renderQuestion();});
+ focusHeading('#screen-title');}
+function materialHTML(m){
+ if(m.type==='visual') return `<section class="task-material visual-material"><h3 class="material-title">${esc(m.title)}</h3><div class="material-content object-groups">${m.groups.map(g=>`<div class="object-group"><div class="object-label">${esc(g.label)} <b>${g.count} шт.</b></div><div class="objects" aria-label="${esc(g.label)}: ${g.count}">${Array.from({length:g.count},()=>`<span aria-hidden="true">${g.emoji}</span>`).join('')}</div></div>`).join('<div class="plus-sticker">+</div>')}<div class="visual-hint">Посчитай все предметы вместе!</div></div></section>`;
+ if(m.type==='formula') return `<section class="task-material"><h3 class="material-title">${esc(m.title)}</h3><div class="material-content material-formula">${esc(m.content)}</div></section>`;
+ if(m.type==='text') return `<section class="task-material"><h3 class="material-title">${esc(m.title)}</h3><div class="material-content"><p>${esc(m.content)}</p></div></section>`;
+ if(m.type==='table') return `<section class="task-material"><h3 class="material-title">${esc(m.title)}</h3><div class="material-content material-scroll"><table class="material-table"><thead><tr>${m.rows[0].map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${m.rows.slice(1).map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></section>`;
+ return '';
+}
+function answerHTML(q){
+ if(q.kind==='radio') return `<fieldset class="answer-group" aria-describedby="question-title"><legend class="answer-label">Выбери один ответ</legend><div class="options">${q.options.map((o,i)=>`<label class="option"><input type="radio" name="answer" value="${esc(o[0])}" ${answers[q.id]===o[0]?'checked':''}><span><b>${i+1}.</b> ${esc(o[1])}</span></label>`).join('')}</div></fieldset>`;
+ return `<fieldset class="answer-group" aria-describedby="question-title"><legend class="answer-label">Твой ответ</legend><label for="numberAnswer">${esc(q.hint)}</label><input class="answer" id="numberAnswer" type="number" inputmode="numeric" min="0" max="20" step="1" autocomplete="off" value="${answers[q.id]!==undefined?esc(answers[q.id]):''}"><p class="answer-hint">Введи число от 0 до 20.</p></fieldset>`;
+}
+function isAnswered(q){const a=answers[q.id];return q.kind==='radio'?typeof a==='string'&&a.length>0:a!==undefined&&String(a).trim()!==''&&Number.isInteger(Number(a))&&Number(a)>=0&&Number(a)<=20;}
+function renderQuestion(){screen='questions';const q=questions[current];const skill=skills.find(s=>s.id===q.skillId);view.innerHTML=`<section class="card" aria-labelledby="question-title">
+<div class="question-top"><p class="muted">ВОПРОС ${current+1} ИЗ ${questions.length} · ${esc(skill.name)}</p>${heroSticker(current%3===0?'steve':current%3===1?'alex':'creeper','ВПЕРЁД!')}</div>
+<div class="bar" aria-label="Прогресс прохождения"><span style="width:${(current+1)/questions.length*100}%"></span></div>
+<h2 class="question-title" id="question-title" tabindex="-1">${esc(q.instruction)}</h2>
+<div class="task-materials">${q.materials.map(materialHTML).join('')}</div>
+${answerHTML(q)}
+<div class="actions"><button class="secondary" id="backBtn" type="button" ${current===0?'disabled':''}>Назад</button><button class="primary" id="nextBtn" type="button" ${isAnswered(q)?'':'disabled'}>${current===questions.length-1?'Завершить':'Далее'}</button></div>
+</section>`;
+ const next=document.getElementById('nextBtn');
+ view.querySelectorAll('input[name="answer"]').forEach(el=>el.addEventListener('change',()=>{answers[q.id]=el.value;next.disabled=!isAnswered(q);}));
+ const number=document.getElementById('numberAnswer');if(number)number.addEventListener('input',()=>{if(number.value.trim()===''){delete answers[q.id];}else{answers[q.id]=number.value;}next.disabled=!isAnswered(q);});
+ document.getElementById('backBtn').addEventListener('click',()=>{if(current>0){current--;renderQuestion();}});
+ next.addEventListener('click',()=>{if(!isAnswered(q))return;if(current<questions.length-1){current++;renderQuestion();}else{calculateResults();renderResults();}});
+ focusHeading('#question-title');}
+function calculateResults(){let total=0;const bySkill=skills.map(s=>{const qs=questions.filter(q=>q.skillId===s.id);const earned=qs.reduce((sum,q)=>sum+(isCorrect(q)?1:0),0);total+=earned;return {...s,earned,max:qs.length,pct:qs.length?earned/qs.length*100:null,count:qs.length};});results={total,max:questions.length,pct:total/questions.length*100,bySkill};}
+function isCorrect(q){if(q.kind==='radio')return answers[q.id]===q.correct;return q.accepted.includes(String(answers[q.id]??'').trim());}
+function level(pct){if(pct>=80)return 'Хорошо получается';if(pct>=50)return 'Стоит закрепить';return 'Нужно повторить';}
+function radarSVG(data){const n=data.length,cx=280,cy=210,r=145,angle=i=>-Math.PI/2+2*Math.PI*i/n,pt=(i,rr)=>[cx+rr*Math.cos(angle(i)),cy+rr*Math.sin(angle(i))];let s='';[.25,.5,.75,1].forEach(k=>{const pts=data.map((_,i)=>pt(i,r*k).join(',')).join(' ');s+=`<polygon class="grid" points="${pts}"/>`;});data.forEach((d,i)=>{const [x,y]=pt(i,r);s+=`<line class="grid" x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"/>`;const [tx,ty]=pt(i,173);s+=`<text x="${tx}" y="${ty}" text-anchor="middle" dominant-baseline="middle">${i+1}</text>`;});const coords=data.map((d,i)=>pt(i,r*d.pct/100));for(let k=1;k<=24;k++){const p=coords.map(([x,y])=>`${cx+(x-cx)*k/24},${cy+(y-cy)*k/24}`).join(' ');s+=`<polygon points="${p}" fill="none" stroke="var(--accent)" stroke-width="0.6" opacity="0.4"/>`;}s+=`<polygon class="result" points="${coords.map(p=>p.join(',')).join(' ')}"/>`;return `<div class="wheel"><div class="wheelHead"><span>Карта знаний · шкала 0–100%</span><span>Номера навыков</span></div><svg viewBox="0 0 560 440" role="img" aria-label="Круговая карта результатов: ${data.map((d,i)=>`навык ${i+1} — ${Math.round(d.pct)} процентов`).join('; ')}">${s}</svg></div>`;}
+
+const worldLocations = [
+ {id:'S1',name:'Долина счёта',biome:'Равнина',icon:'🌾',scene:'plains',tag:'Сложение и вычитание',hint:'Собирай числа и открывай новые пути.'},
+ {id:'S2',name:'Гора сравнений',biome:'Горный биом',icon:'⛰️',scene:'mountain',tag:'Сравнение чисел',hint:'Находи, какое число выше или ниже.'},
+ {id:'S3',name:'Шахта загадок',biome:'Пещеры',icon:'⛏️',scene:'cave',tag:'Неизвестное число',hint:'Ищи потерянные числа в глубине шахты.'},
+ {id:'S4',name:'Деревня задач',biome:'Деревня',icon:'🏡',scene:'village',tag:'Текстовые задачи',hint:'Помогай жителям решать математические задачи.'},
+ {id:'S5',name:'Лес данных',biome:'Лес',icon:'🌲',scene:'forest',tag:'Работа с данными',hint:'Исследуй таблицы и сравнивай находки.'},
+ {id:'S6',name:'Ледяной маршрут',biome:'Снежный биом',icon:'❄️',scene:'snow',tag:'Последовательность чисел',hint:'Прокладывай путь по числовому ряду.'}
+];
+function worldMapHTML(data){
+ const cards=data.map((s,i)=>{
+  const place=worldLocations.find(x=>x.id===s.id);
+  const pct=Math.round(s.pct);
+  const stage=pct>=80?'Локация освоена':pct>=50?'Путь открыт':'Нужно потренироваться';
+  return `<article class="world-card biome-${place.scene}">
+    <div class="world-card-top"><span class="world-icon" aria-hidden="true">${place.icon}</span><span class="world-number">МИР ${String(i+1).padStart(2,'0')}</span></div>
+    <div class="world-scene" aria-hidden="true"><span class="block-cloud"></span><span class="block-hill hill-a"></span><span class="block-hill hill-b"></span><span class="block-ground"></span><span class="world-mob">${i===2?'⛏️':i===3?'🏠':i===4?'🐝':i===5?'☃️':i===1?'💎':'🧑‍🌾'}</span></div>
+    <div class="world-biome">${esc(place.biome)}</div>
+    <h3>${esc(place.name)}</h3>
+    <p class="world-skill">${esc(s.name)}</p>
+    <p class="world-hint">${esc(place.hint)}</p>
+    <div class="world-progress-head"><strong>ПРОКАЧКА</strong><strong>${pct}%</strong></div>
+    <div class="world-xp" role="progressbar" aria-label="Прокачка навыка ${esc(s.name)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><span style="width:${pct}%"></span></div>
+    <div class="world-task-list"><div class="world-task-title">ТРИ ЗАДАНИЯ ЛОКАЦИИ</div>${questions.filter(q=>q.skillId===s.id).map((q,qi)=>`<div class="world-task-row"><span>Задание ${qi+1}</span><strong class="${isCorrect(q)?'task-done':'task-retry'}">${isCorrect(q)?'✓ Выполнено':'↻ Повторить'}</strong></div>`).join('')}</div>
+    <div class="world-card-bottom"><span>${s.earned} / ${s.max} XP</span><span class="world-stage">${stage}</span></div>
+   </article>`;
+ }).join('');
+ return `<div class="world-intro"><div class="world-intro-sticker">ТВОЙ МИР · ТВОИ ДОСТИЖЕНИЯ</div><p>Каждый навык — отдельная локация. Выполненные задания превращаются в опыт и прокачивают твой мир!</p></div><div class="world-map">${cards}</div>`;
+}
+
+function renderResults(){screen='results';const d=results.bySkill;view.innerHTML=`<section class="card"><div class="result-heading"><div><div class="comic-kicker">ТВОЙ РЕЗУЛЬТАТ</div><h2 id="screen-title" tabindex="-1">Карта знаний</h2></div>${heroSticker('creeper','КРУТО!')}</div><p class="result-summary">${results.total} из ${results.max} баллов · ${Math.round(results.pct)}%</p><p class="muted">Результаты показывают, как выполнены именно эти задания.</p><h3 class="results-section-title">ДИАГРАММА НАВЫКОВ</h3>${radarSVG(d)}<h3 class="results-section-title">ТВОЙ MINECRAFT-МИР</h3>${worldMapHTML(d)}<div class="actions"><button class="primary" id="recommendBtn" type="button">Что повторить</button><button id="errorsBtn" type="button">Посмотреть ошибки</button><button class="secondary" id="restartBtn" type="button">Пройти заново</button></div></section>`;
+ document.getElementById('recommendBtn').addEventListener('click',renderRecommendations);document.getElementById('errorsBtn').addEventListener('click',renderErrors);document.getElementById('restartBtn').addEventListener('click',restart);focusHeading('#screen-title');}
+function renderRecommendations(){screen='recommendations';const strong=results.bySkill.filter(s=>s.pct>=80);const weak=results.bySkill.filter(s=>s.pct<80).sort((a,b)=>a.pct-b.pct||skills.findIndex(x=>x.id===a.id)-skills.findIndex(x=>x.id===b.id));let html='';if(strong.length){html+=`<h3>Что уже получается</h3><ul>${strong.map(s=>`<li>${esc(s.name)} — ${Math.round(s.pct)}%.</li>`).join('')}</ul>`;}if(weak.length){html+=`<h3>С чего начать</h3><div class="notice"><strong>${esc(weak[0].name)} — ${Math.round(weak[0].pct)}%</strong><p>${esc(weak[0].repeat)}</p><p><strong>Следующий шаг:</strong> ${esc(weak[0].step)}</p></div>`;if(weak.length>1){html+='<h3>Что ещё стоит закрепить</h3>'+weak.slice(1).map(s=>`<div class="review"><strong>${esc(s.name)} — ${Math.round(s.pct)}%</strong><p>${esc(s.repeat)}</p><p><strong>Следующий шаг:</strong> ${esc(s.step)}</p></div>`).join('');}}else{html+='<div class="notice success">По этим заданиям все проверенные навыки на высоком уровне.</div>';}if(!strong.length)html='<p class="muted">Пока нет навыков с результатом 80% и выше. Это не оценка способностей ребёнка, а повод спокойно повторить материал.</p>'+html;
+ view.innerHTML=`<section class="card"><h2 id="screen-title" tabindex="-1">Рекомендации</h2>${html}<div class="actions"><button class="primary" id="toResults" type="button">К результатам</button><button class="secondary" id="restartBtn" type="button">Пройти заново</button></div></section>`;document.getElementById('toResults').addEventListener('click',renderResults);document.getElementById('restartBtn').addEventListener('click',restart);focusHeading('#screen-title');}
+function userAnswer(q){const a=answers[q.id];if(a===undefined||String(a).trim()==='')return 'Ответ не указан';if(q.kind==='radio'){const o=q.options.find(x=>x[0]===a);return o?o[1]:String(a);}return String(a);}
+function renderErrors(){screen='errors';const wrong=questions.filter(q=>!isCorrect(q));const content=wrong.length?wrong.map((q,i)=>`<div class="review"><h3>Задание ${questions.indexOf(q)+1} · ${esc(skills.find(s=>s.id===q.skillId).name)}</h3><p><strong>${esc(q.instruction)}</strong></p><div class="task-materials">${q.materials.map(materialHTML).join('')}</div><div class="review-answer"><span>Твой ответ</span><strong class="error-text">${esc(userAnswer(q))}</strong><span>Правильный ответ</span><strong>${esc(q.answer)}</strong><span>Баллы</span><strong>0 из 1</strong></div><p>${esc(q.explain)}</p></div>`).join(''):'<div class="notice success">Все ответы верные.</div>';
+ view.innerHTML=`<section class="card"><h2 id="screen-title" tabindex="-1">Разбор ошибок</h2>${content}<div class="actions"><button class="primary" id="toResults" type="button">К результатам</button></div></section>`;document.getElementById('toResults').addEventListener('click',renderResults);focusHeading('#screen-title');}
+function restart(){Object.keys(answers).forEach(k=>delete answers[k]);results=null;current=0;renderStart();}
+setTheme('graphite');renderStart();
+</script>
+</body>
+</html>
